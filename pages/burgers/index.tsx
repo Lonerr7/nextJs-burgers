@@ -11,7 +11,7 @@ export const getStaticProps = async () => {
   };
 };
 
-interface Burger {
+export interface Burger {
   name: string;
   image: string;
   desc: string;
