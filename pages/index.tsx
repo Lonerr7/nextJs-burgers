@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Жирные бургеры | главная страница</title>
+        <title>Жирные бургеры | Главная страница</title>
         <meta name="title" content="Жирные бургеры" />
       </Head>
       <main className={s.container}>

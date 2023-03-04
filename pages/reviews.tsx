@@ -18,6 +18,7 @@ const Reviews: React.FC<Props> = ({ reviews }) => {
     <>
       <Head>
         <title>Жирные бургеры | Отзывы</title>
+        <meta name='title' content='Отзывы клиентов о жирных бургерах' />
       </Head>
       <div>
         <h1>Отзывы клиентов</h1>

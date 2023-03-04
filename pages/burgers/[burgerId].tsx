@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import { Burger } from '.';
 import s from '../../styles/Burgers.module.css';
@@ -35,15 +36,26 @@ interface Props {
 
 const Details: React.FC<Props> = ({ burger }) => {
   return (
-    <div className={s.singleBurger}>
-      <h1>{burger.name}</h1>
-      <div className={s.imageContainer}>
-        <Image src={burger.image} alt={burger.name} width={400} height={300} />
+    <>
+      <Head>
+        <title>Жирные бургеры | {burger.name}</title>
+        <meta name="title" content={`Описание: ${burger.name}`} />
+      </Head>
+      <div className={s.singleBurger}>
+        <h1>{burger.name}</h1>
+        <div className={s.imageContainer}>
+          <Image
+            src={burger.image}
+            alt={burger.name}
+            width={400}
+            height={300}
+          />
+        </div>
+        <div>
+          <p>{burger.desc}</p>
+        </div>
       </div>
-      <div>
-        <p>{burger.desc}</p>
-      </div>
-    </div>
+    </>
   );
 };
 
