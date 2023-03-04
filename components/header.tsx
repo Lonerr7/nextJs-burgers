@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { SiBurgerking } from 'react-icons/si';
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header>
       <div>
